@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Espera - Party Games 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lobby.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Sala de Espera</h1>
+        <p>Comparte el código de la sala con tus amigos:</p>
+        <h2 id="roomCodeDisplay">Cargando...</h2>
+    </header>
+
+    <main class="container">
+        
+        <section class="players-section">
+            <h3>Jugadores (<span id="playerCount">0</span>)</h3>
+            <ul id="playersList">
+                </ul>
+        </section>
+
+        <section class="games-section">
+            <h3>Elige un juego</h3>
+            <div class="games-grid">
+                
+                <button class="game-card" data-game="carta-alta">
+                    <h4>Carta Alta 🍻</h4>
+                    <p>Saca la carta más baja y toma.</p>
+                </button>
+                
+                <button class="game-card" data-game="pictionary">
+                    <h4>Pictionary Online</h4>
+                    <p>Dibuja y adivina. ¡Las risas están aseguradas!</p>
+                </button>
+                
+                </div>
+        </section>
+
+    </main>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="lobby.js"></script>
+</body>
+</html>
